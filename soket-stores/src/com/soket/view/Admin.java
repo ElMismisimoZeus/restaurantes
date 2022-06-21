@@ -41,6 +41,7 @@ public class Admin extends JFrame {
 
 	/**
 	 * Create the frame.
+	 * trabajando en mi rama como chita
 	 */
 	public Admin() {
 		setTitle("Consola de Administraci\u00F3n");
