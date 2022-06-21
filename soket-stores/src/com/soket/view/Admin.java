@@ -15,6 +15,9 @@ import javax.swing.JRadioButtonMenuItem;
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
 import javax.swing.JSpinner;
+import javax.swing.JTable;
+import javax.swing.JToolBar;
+import javax.swing.ImageIcon;
 
 public class Admin extends JFrame {
 
@@ -52,5 +55,16 @@ public class Admin extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new BorderLayout(0, 0));
+		
+		JPanel pnlHeader = new JPanel();
+		contentPane.add(pnlHeader, BorderLayout.NORTH);
+		
+		JPanel pnlMenu = new JPanel();
+		contentPane.add(pnlMenu, BorderLayout.WEST);
+		pnlMenu.setLayout(new BorderLayout(0, 0));
+		
+		JPanel pnlContent = new JPanel();
+		contentPane.add(pnlContent, BorderLayout.CENTER);
+		pnlContent.setLayout(null);
 	}
 }
